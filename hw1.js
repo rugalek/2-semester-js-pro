@@ -1,99 +1,123 @@
-///////////////1//////////////
+// ///////////////1//////////////
 
-let arr = [1,3,5,7,8,0]
-let arrSqr = arr.map(i => i**2);
+// let arr = [1,3,5,7,8,0]
+// let arrSqr = arr.map(i => i**2);
 
-/////////////////2//////////////
+// /////////////////2//////////////
 
-let arr = Array.from({length: 20}, () => Math.floor(Math.random() * 20));
-let arrSum = arr.reduce((acc, curr) => acc + curr);
+// let arr = Array.from({length: 20}, () => Math.floor(Math.random() * 20));
+// let arrSum = arr.reduce((acc, curr) => acc + curr);
 
-///////////////3//////////////
+// ///////////////3//////////////
 
-let num = 1994776444499;
+// let num = 1994776444499;
 
-let arr = String(num).split("").map((num)=>{
-    return Number(num)
-  })
-for (let i = 0; i < arr.length - 1; i++) {
-    if (arr[i] % 2 !=0 && arr[i + 1] % 2 !=0 ) {
-     arr[i] += ':';
-    } 
-}
-let result = arr.join('');
+// let arr = String(num).split("").map((num)=>{
+//     return Number(num)
+//   })
+// for (let i = 0; i < arr.length - 1; i++) {
+//     if (arr[i] % 2 !=0 && arr[i + 1] % 2 !=0 ) {
+//      arr[i] += ':';
+//     } 
+// }
+// let result = arr.join('');
 
-///////////////4//////////////
+// ///////////////4//////////////
 
-let arr1 = [1,3,5,6,7,9]
-let arr2 = [2,3,5,6,4]
+// let arr1 = [1,3,5,6,7,9]
+// let arr2 = [2,3,5,6,4]
 
-function arrSum(arr1, arr2) {
-    let resArr = [];
-    for (let i = 0; i < Math.max(a.length, b.length); i++) {
-        resArr.push((a[i] || 0) + (b[i] || 0));
-    }
-    return resArr
-}
+// function arrSum(arr1, arr2) {
+//     let resArr = [];
+//     for (let i = 0; i < Math.max(a.length, b.length); i++) {
+//         resArr.push((a[i] || 0) + (b[i] || 0));
+//     }
+//     return resArr
+// }
 
-///////////////5//////////////
+// ///////////////5//////////////
 
-let arr1 = [1,3,5,6,7,9]
-let arr2 = [2,3,5,6,4]
+// let arr1 = [1,3,5,6,7,9]
+// let arr2 = [2,3,5,6,4]
 
-function arrSubtr(a, b) {
-    let resArr = [];
-    for (let i = 0; i < Math.max(a.length, b.length); i++) {
-        resArr.push((a[i] || 0) - (b[i] || 0));
-    }
-    return resArr
-}
-console.log(a);
-console.log(b);
-console.log(arrSubtr(a,b));
+// function arrSubtr(a, b) {
+//     let resArr = [];
+//     for (let i = 0; i < Math.max(a.length, b.length); i++) {
+//         resArr.push((a[i] || 0) - (b[i] || 0));
+//     }
+//     return resArr
+// }
+// console.log(a);
+// console.log(b);
+// console.log(arrSubtr(a,b));
 
-///////////////6//////////////
+// ///////////////6//////////////
 
-let arr = [1,3,5,6,7,9];
-let reversedArr = arr.reverse();
-console.log(reversedArr);
+// let arr = [1,3,5,6,7,9];
+// let reversedArr = arr.concat([]).reverse();
+// console.log(reversedArr);
 
-///////////////7//////////////
+// ///////////////7//////////////
 
-let arr = [
-    {name: 'Ivan', age: 18},
-     {name: 'Petr', age: 12},
-      {name: 'Sidor', age: 25},
-        {name: 'Vasya', age: 14},
-          {name: 'Grego', age: 19}
-        ];
-let arr18 = [];
-let arrBefore18 = [];
-arr.forEach(person => {
-    if (person.age >= 18) {
-        arr18.push(person);
-    } else if (person.age < 18) {
-        arrBefore18.push(person);
-    }
-});
+// let arr = [
+//     {name: 'Ivan', age: 18},
+//      {name: 'Petr', age: 12},
+//       {name: 'Sidor', age: 25},
+//         {name: 'Vasya', age: 14},
+//           {name: 'Grego', age: 19}
+//         ];
+// let arr18 = [];
+// let arrBefore18 = [];
+// arr.forEach(person => {
+//     if (person.age >= 18) {
+//         arr18.push(person);
+//     } else if (person.age < 18) {
+//         arrBefore18.push(person);
+//     }
+// });
 
-console.log(arr18);
-console.log(arrBefore18);
+// console.log(arr18);
+// console.log(arrBefore18);
 
-///////////////8//////////////
+// ///////////////8//////////////
 
-let arr = [1, 2, 3, 4, 5 ,6 ,7 ,8, 9, 1, 2, 3, 4, 5, 6];
-let uno = Array.from(new Set(arr));
+// let arr = [1, 2, 3, 4, 5 ,6 ,7 ,8, 9, 1, 2, 3, 4, 5, 6];
+// let uno = Array.from(new Set(arr));
 
-///////////////9//////////////
+// ///////////////9//////////////
 
-let string = 'шалаш';
-function isPalidrome (word) {
-    return word === word.split('').reverse().join('');
-};
+// let string = 'шалаш';
+// function isPalidrome (word) {
+//     return word === word.split('').reverse().join('');
+// };
 
-///////////////10//////////////
+// ///////////////10//////////////
 
+// let array = [2, 4, 6, 8, 33, 9, 8, 6, 44];
 
+// function findThis (arr, it) {
+//     let res = []; 
+//     for (let i = 0; i < arr.length; i++ ) {
+//         if (arr[i] === it) {
+//             res.push(i);
+//         } 
+//     } 
+//     if (res.length == 0) {
+//         res[0] = -1;
+//     }
+//     let newArr = res.toString();
+//     return newArr;
+// }
 
+// console.log(findThis(array, 6))
 
+// let array = ['Ivan', 'Petr', 'Sidor', 'Sasha', 'Grego', 'Lera', 'Maxim'];
 
+// function searchName (arr, symb) {
+//     let foo = arr.map((el) => el.toString().toLowerCase());
+//     let symbol = symb.toLowerCase();
+//     return console.log(foo);
+
+// }
+
+// searchName (array, 'i');
